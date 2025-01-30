@@ -1,0 +1,1219 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+      }
+      
+    </style>
+</head>
+
+<body>
+    <!-- Top Section -->
+    <section class="bg-blue-600">
+        <div class="container m-auto px-6 py-2">
+            <p class="text-center text-[8px] md:text-sm font-light text-white">Accepting 4 new clients. <a href="#"
+                    class="font-medium">Get started now.</a></p>
+        </div>
+    </section>
+    <!-- Top Section End -->
+
+    <!-- Nav + Hero Banner -->
+
+    <section class="bg-[url('images/background-vec.svg')] bg-no-repeat relative" id="bg">
+        <div class="container m-auto px-6">
+            <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+                <div class="col-span-4">
+                    <div class="flex justify-start h-20 items-center">
+                        <a href="#"><img src="images/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-span-4" id="desktop-view">
+                    <div class="flex justify-center h-20 items-center">
+                        <ul class="m-0 p-0 list-none">
+                            <li class="inline-block px-4"><a
+                                    class="inline-block text-lg text-center text-gray-800 font-normal hover:text-blue-900 hover:font-medium transition-all delay-300"
+                                    href="#">Home</a></li>
+                            <li class="inline-block px-4"><a
+                                    class="inline-block text-lg text-center text-gray-800 font-normal hover:text-blue-900 hover:font-medium transition-all delay-300"
+                                    href="#">About us</a></li>
+                            <li class="inline-block px-4"><a
+                                    class="inline-block text-lg text-center text-gray-800 font-normal hover:text-blue-900 hover:font-medium transition-all delay-300"
+                                    href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-span-4" id="desktop-view">
+                    <div class="flex justify-end h-20 items-center">
+                        <a href="#"
+                            class="inline-block text-lg text-center font-medium py-2 px-6 bg-blue-600 rounded-4xl text-white hover:bg-blue-900 transition-all decoration-slate-300">Get
+                            Started</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Nav -->
+
+                <div class="col-span-4 absolute top-0 right-6" id="mobile-view">
+                    <div class="flex justify-end h-20 items-center">
+                        <button class="cursor-pointer" id="openBtn">
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                            </svg>
+                        </button>
+                        <button id="closeBtn">
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z">
+                                </path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="fixed left-0 top-0 w-1/2 md:w-2/5 h-full bg-gray-700 px-6 py-8 z-50 transition-all delay-150"
+                        id="m-nav">
+                        <div class="flex justify-start h-20 items-center">
+                            <a href="#"><img class="w-14 md:w-28" src="images/logo.png" alt=""></a>
+                        </div>
+                        <ul class="m-0 px-0 md:px-6 list-none">
+                            <li class="block py-2"><a
+                                    class="inline-block text-base md:text-lg text-center text-white font-normal transition-all delay-300"
+                                    href="#">Home</a></li>
+                            <li class="block py-2"><a
+                                    class="inline-block text-base md:text-lg text-center text-white font-normal transition-all delay-300"
+                                    href="#">About us</a></li>
+                            <li class="block py-2"><a
+                                    class="inline-block text-base md:text-lg text-center text-white font-normal transition-all delay-300"
+                                    href="#">Blog</a></li>
+                        </ul><br>
+                        <a href="#"
+                            class="inline-block text-sm md:text-lg text-center font-medium py-1 md:py-2 px-3 md:px-6 bg-blue-600 rounded-4xl text-white hover:bg-blue-900 transition-all decoration-slate-300">Get
+                            Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero Banner Content -->
+
+        <div class="container m-auto px-6">
+            <div class="flex justify-center flex-col gap-4 py-12">
+                <h1 class="text-center text-2xl md:text-4xl lg:text-7xl text-gray-900 font-bold w-full md:w-3/5 m-auto">
+                    Save time
+                    & <span class="text-blue-500">work
+                        smarter</span> with AI Automation</h1>
+                <p class="text-center text-base lg:text-lg font-light w-full md:w-1/3 m-auto py-4">We help you automate
+                    your
+                    workflows,
+                    automate repetitive tasks, and elevate your business.</p>
+                <div class="text-center">
+                    <a href="#"
+                        class="inline-block text-sm lg:text-lg text-center font-medium py-2 px-6 bg-blue-600 rounded-4xl text-white hover:bg-blue-900 transition-all decoration-slate-300">Book
+                        Your Free Audit Call</a>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 justify-center py-6">
+                    <div class="flex justify-center md:justify-start h-20 items-center">
+                        <img class="w-28" src="images/person-combo.png" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center h-20 gap-3 items-center text-left">
+                        <a class="text-gray-900 hover:text-blue-500" href="#">
+                            <p class="text-sm lg:text-base text-left  font-medium block">200+ happy clients!
+                            </p>
+                        </a>
+
+                        <a class="text-sm lg:text-base text-left text-gray-600 font-normal block" href="#">Join them now
+                            -></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container m-auto px-6">
+            <img class="w-4/5 m-auto rounded-3xl" src="images/hero-banner.webp" alt="">
+            <div class="py-4">
+                <p class="text-sm lg:text-base text-gray-700 font-medium text-center">Trusted by 40+ worldwide clients
+                </p>
+            </div>
+            <div class="py-10 relative w-4/5 m-auto overflow-hidden" id="shadow">
+                <div class="slider">
+                    <div class="box">
+                        <img src="images/logoipsum-286.svg">
+                        <img src="images/logoipsum-288.svg">
+                        <img src="images/logoipsum-311.svg">
+                        <img src="images/logoipsum-317.svg">
+                        <img src="images/logoipsum-321.svg">
+                        <img src="images/logoipsum-334.svg">
+                        <img src="images/logoipsum-337.svg">
+                        <img src="images/logoipsum-342.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="bg-[#f6f6f7] py-12">
+        <div class="container m-auto px-6">
+            <div class="text-center">
+                <p
+                    class="text-center text-sm lg:text-base inline-block text-blue-500 bg-white py-2 px-4 rounded-md font-semibold uppercase">
+                    Services</p>
+                <h2 class="text-xl md:text-3xl lg:text-6xl text-center font-bold block py-3"><span
+                        class="text-blue-500">AI-powered </span><br>
+                    automation services</h2>
+            </div>
+
+            <div class="w-full md:w-4/5 m-auto py-12">
+                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+                    <div class="col-span-4 lg:col-span-6">
+                        <div
+                            class="bg-white py-6 px-6 text-left rounded-md hover:rotate-[-2deg] transition-all delay-100">
+                            <img class="w-8 md:w-14" src="images/conversation.png" alt="">
+                            <h3 class="text-xl lg:text-2xl text-gray-800 font-semibold block py-3">Customer Support
+                                Chatbots</h3>
+                            <p class="text-sm lg:text-base font-normal text-left text-gray-600 pb-2">Streamline
+                                operations and
+                                enhance
+                                productivity with AI-driven automation.</p>
+                            <a class="flex gap-3 hover:gap-4 py-2 text-blue-600 font-semibold transition-all delay-150"
+                                href="#">Learn more <svg class="w-6 text-blue-200" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M9.99945 11H2.04883C2.55055 5.94668 6.8141 2 11.9995 2C17.5223 2 21.9995 6.47715 21.9995 12C21.9995 17.5228 17.5223 22 11.9995 22C6.8141 22 2.55055 18.0533 2.04883 13H9.99945V16L14.9995 12L9.99945 8V11Z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="col-span-4 lg:col-span-6">
+                        <div
+                            class="bg-white py-6 px-6 text-left rounded-md hover:rotate-[2deg] transition-all delay-100">
+                            <img class="w-8 md:w-14" src="images/conversation.png" alt="">
+                            <h3 class="text-xl lg:text-2xl text-gray-800 font-semibold block py-3">Customer Support
+                                Chatbots</h3>
+                            <p class="text-sm lg:text-base font-normal text-left text-gray-600 pb-2">Streamline
+                                operations and
+                                enhance
+                                productivity with AI-driven automation.</p>
+                            <a class="flex gap-3 hover:gap-4 py-2 text-blue-600 font-semibold transition-all delay-150"
+                                href="#">Learn more <svg class="w-6 text-blue-200" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M9.99945 11H2.04883C2.55055 5.94668 6.8141 2 11.9995 2C17.5223 2 21.9995 6.47715 21.9995 12C21.9995 17.5228 17.5223 22 11.9995 22C6.8141 22 2.55055 18.0533 2.04883 13H9.99945V16L14.9995 12L9.99945 8V11Z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="col-span-4 lg:col-span-6">
+                        <div
+                            class="bg-white py-6 px-6 text-left rounded-md hover:rotate-[-2deg] transition-all delay-100">
+                            <img class="w-8 md:w-14" src="images/conversation.png" alt="">
+                            <h3 class="text-xl lg:text-2xl text-gray-800 font-semibold block py-3">Customer Support
+                                Chatbots</h3>
+                            <p class="text-sm lg:text-base font-normal text-left text-gray-600 pb-2">Streamline
+                                operations and
+                                enhance
+                                productivity with AI-driven automation.</p>
+                            <a class="flex gap-3 hover:gap-4 py-2 text-blue-600 font-semibold transition-all delay-150"
+                                href="#">Learn more <svg class="w-6 text-blue-200" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M9.99945 11H2.04883C2.55055 5.94668 6.8141 2 11.9995 2C17.5223 2 21.9995 6.47715 21.9995 12C21.9995 17.5228 17.5223 22 11.9995 22C6.8141 22 2.55055 18.0533 2.04883 13H9.99945V16L14.9995 12L9.99945 8V11Z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="col-span-4 lg:col-span-6">
+                        <div
+                            class="bg-white py-6 px-6 text-left rounded-md hover:rotate-[2deg] transition-all delay-100">
+                            <img class="w-8 md:w-14" src="images/conversation.png" alt="">
+                            <h3 class="text-xl lg:text-2xl text-gray-800 font-semibold block py-3">Customer Support
+                                Chatbots</h3>
+                            <p class="text-sm lg:text-base font-normal text-left text-gray-600 pb-2">Streamline
+                                operations and
+                                enhance
+                                productivity with AI-driven automation.</p>
+                            <a class="flex gap-3 hover:gap-4 py-2 text-blue-600 font-semibold transition-all delay-150"
+                                href="#">Learn more <svg class="w-6 text-blue-200" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M9.99945 11H2.04883C2.55055 5.94668 6.8141 2 11.9995 2C17.5223 2 21.9995 6.47715 21.9995 12C21.9995 17.5228 17.5223 22 11.9995 22C6.8141 22 2.55055 18.0533 2.04883 13H9.99945V16L14.9995 12L9.99945 8V11Z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section start -->
+
+    <!-- Content block section start -->
+    <section class="bg-[#f6f6f7] py-12">
+        <div class="container m-auto px-6">
+            <div class="w-full md:w-4/5 m-auto py-4">
+                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+                    <div class="col-span-4 lg:col-span-6">
+                        <div class="text-center md:text-left">
+                            <p
+                                class="text-center text-base inline-block text-blue-500 bg-white py-2 px-4 rounded-md font-semibold uppercase">
+                                Content block</p>
+                            <h2 class="text-3xl lg:text-5xl text-center md:text-left font-bold block py-5">Workflows
+                                with our AI
+                                automation <span class="text-blue-500">expertise</span></h2>
+                            <p class="text-sm lg:text-base font-normal text-left text-gray-600 pb-2">Revolutionize
+                                tasks, reduce
+                                errors, and boost efficiency with intelligent technology, streamlining operations for
+                                unparalleled productivity.</p>
+                            <div class="flex flex-col gap-3 py-5">
+                                <p class="flex gap-2 text-base font-normal text-left text-gray-600"><svg class="w-5"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z">
+                                        </path>
+                                    </svg> Functional sections</p>
+                                <p class="flex gap-2 text-base font-normal text-left text-gray-600"><svg class="w-5"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z">
+                                        </path>
+                                    </svg> Easy to customize</p>
+                            </div>
+                            <div><a href="#"
+                                    class="inline-block text-lg text-center font-medium py-2 px-6 bg-blue-600 rounded-4xl text-white hover:bg-blue-900 transition-all decoration-slate-300">Book
+                                    Your Free Audit Call</a></div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 lg:col-span-6">
+                        <div class="text-center">
+                            <img class="w-4/5 m-auto" src="images/post-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content block section end-->
+
+    <!-- Content block section start -->
+    <section class="bg-[#f6f6f7] py-12">
+        <div class="container m-auto px-6">
+            <div class="w-4/5 m-auto py-4">
+                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+                    <div class="col-span-4 lg:col-span-6">
+                        <div class="text-center">
+                            <img class="w-4/5 m-auto" src="images/post-2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-span-4 lg:col-span-6">
+                        <div class="text-center md:text-left">
+                            <p
+                                class="text-center text-base inline-block text-blue-500 bg-white py-2 px-4 rounded-md font-semibold uppercase">
+                                Content block</p>
+                            <h2 class="text-3xl lg:text-5xl text-center md:text-left font-bold block py-5">Harnessing AI
+                                for business
+                                success</h2>
+
+
+                            <a href="#" class="group transition-all delay-100 ">
+                                <div
+                                    class="flex justify-between gap-4 border border-gray-300 rounded-md px-2 py-3 group-hover:bg-blue-500 transition-all delay-100">
+                                    <div class="flex justify-start h-auto lg:h-8 items-center">
+                                        <svg class="w-8 group-hover:text-gray-50" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex justify-start h-auto lg:h-8 items-center ">
+                                        <p
+                                            class="text-base font-normal text-left text-gray-600 group-hover:text-gray-50 transition-all delay-100">
+                                            Boost
+                                            efficiency and cut costs with AI-powered automation</p>
+                                    </div>
+                                    <div class="flex justify-center h-auto lg:h-8 items-center">
+                                        <svg class="w-6 group-hover:text-gray-50 transition-all delay-100"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 11H8V13H12V16L16 12L12 8V11Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a> <br>
+                            <a href="#" class="group transition-all delay-100 ">
+                                <div
+                                    class="flex gap-4 justify-between border border-gray-300 rounded-md px-2 py-3 group-hover:bg-blue-500 transition-all delay-100">
+                                    <div class="flex justify-start h-auto lg:h-8 items-center">
+
+                                        <svg class="w-8 group-hover:text-gray-50" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M21 7L16 2H3.9934C3.44495 2 3 2.44405 3 2.9918V21.0082C3 21.5447 3.44476 22 3.9934 22H20.0066C20.5551 22 21 21.556 21 21.0082V7ZM11 9.5C11 10.3284 10.3284 11 9.5 11C8.67157 11 8 10.3284 8 9.5C8 8.67157 8.67157 8 9.5 8C10.3284 8 11 8.67157 11 9.5ZM17.5 17H8L13.5 10L17.5 17Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex justify-start h-auto lg:h-8 items-center">
+                                        <p
+                                            class="text-base font-normal text-left text-gray-600 group-hover:text-gray-50 transition-all delay-100">
+                                            Optimize operations, minimize errors, and save resources</p>
+                                    </div>
+                                    <div class="flex justify-center h-auto lg:h-8 items-center">
+                                        <svg class="w-6 group-hover:text-gray-50 transition-all delay-100"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                            <path
+                                                d="M12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2ZM12 11H8V13H12V16L16 12L12 8V11Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <p class="text-base font-normal text-left text-gray-600 py-5">“Couldn’t be happier with the
+                                work the guys from XYZ Agency did for us. Made sales 10x more efficient.”</p>
+
+                            <div class="flex gap-4 py-2">
+                                <div>
+                                    <img class="w-16 h-16 object-cover rounded-full" src="images/person-5.jpg" alt="">
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <p class="text-base font-semibold text-left text-gray-800">William James</p>
+                                    <p class="text-base font-normal text-left text-gray-600">CEO, XYZ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Content block section end-->
+
+    <!-- Testimonial section start -->
+    <section class="bg-[#f6f6f7] py-16">
+        <div class="container m-auto px-6">
+            <div class="text-center">
+                <p
+                    class="text-center text-sm lg:text-base inline-block text-blue-500 bg-white py-2 px-4 rounded-md font-semibold uppercase">
+                    Testimonials</p>
+                <h2 class="text-3xl lg:text-6xl text-center font-bold block py-3">Leading the way in <br> AI automation
+                </h2>
+            </div>
+            <div class="py-10">
+                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+                    <div class="col-span-4 lg:col-span-3 bg-white px-5 py-6 rounded-md">
+                        <div class="flex gap-4 py-2">
+                            <div>
+                                <img class="w-16 h-16 object-cover rounded-full" src="images/person-5.jpg" alt="">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-base font-semibold text-left text-gray-800">William James</p>
+                                <p class="text-base font-normal text-left text-gray-600">CEO, XYZ</p>
+                            </div>
+                        </div>
+                        <p class="text-left text-base text-gray-700 py-4">"We approached Wize for an internal chatbot
+                            that's trained on all of our sales data, and the
+                            results are amazing!"</p>
+                        <div class="flex gap-1 pt-4">
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col-span-4 lg:col-span-3 bg-white px-5 py-6 rounded-md">
+                        <div class="flex gap-4 py-2">
+                            <div>
+                                <img class="w-16 h-16 object-cover rounded-full" src="images/person-5.jpg" alt="">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-base font-semibold text-left text-gray-800">William James</p>
+                                <p class="text-base font-normal text-left text-gray-600">CEO, XYZ</p>
+                            </div>
+                        </div>
+                        <p class="text-left text-base text-gray-700 py-4">"We approached Wize for an internal chatbot
+                            that's trained on all of our sales data, and the
+                            results are amazing!"</p>
+                        <div class="flex gap-1 pt-4">
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col-span-4 lg:col-span-3 bg-white px-5 py-6 rounded-md">
+                        <div class="flex gap-4 py-2">
+                            <div>
+                                <img class="w-16 h-16 object-cover rounded-full" src="images/person-5.jpg" alt="">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-base font-semibold text-left text-gray-800">William James</p>
+                                <p class="text-base font-normal text-left text-gray-600">CEO, XYZ</p>
+                            </div>
+                        </div>
+                        <p class="text-left text-base text-gray-700 py-4">"We approached Wize for an internal chatbot
+                            that's trained on all of our sales data, and the
+                            results are amazing!"</p>
+                        <div class="flex gap-1 pt-4">
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col-span-4 lg:col-span-3 bg-white px-5 py-6 rounded-md">
+                        <div class="flex gap-4 py-2">
+                            <div>
+                                <img class="w-16 h-16 object-cover rounded-full" src="images/person-5.jpg" alt="">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="text-base font-semibold text-left text-gray-800">William James</p>
+                                <p class="text-base font-normal text-left text-gray-600">CEO, XYZ</p>
+                            </div>
+                        </div>
+                        <p class="text-left text-base text-gray-700 py-4">"We approached Wize for an internal chatbot
+                            that's trained on all of our sales data, and the
+                            results are amazing!"</p>
+                        <div class="flex gap-1 pt-4">
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                            <svg class="w-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial section end -->
+
+    <!-- Process section start -->
+    <section class="bg-[#f6f6f7] py-16">
+        <div class="container m-auto px-6">
+            <div class="w-full md:w-4/5 m-auto py-4">
+                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+                    <div class="col-span-4 lg:col-span-6">
+                        <div class="text-center md:text-left sticky top-10">
+                            <p
+                                class="text-center text-base inline-block text-blue-500 bg-white py-2 px-4 rounded-md font-semibold uppercase">
+                                Process</p>
+                            <h2 class="text-3xl lg:text-5xl text-center md:text-left font-bold block py-5">How to get
+                                started</h2>
+                            <p class="text-base font-normal text-left text-gray-600 pb-2">Unleash the power of AI
+                                automation to transform routine processes, ensuring precision, 24/7 availability, and
+                                significant cost savings.</p>
+
+                            <div class="pt-5"><a href="#"
+                                    class="inline-block text-lg text-center font-medium py-2 px-6 bg-blue-600 rounded-4xl text-white hover:bg-blue-900 transition-all decoration-slate-300">Book
+                                    Your Free Audit Call</a></div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 lg:col-span-6">
+                        <div>
+                            <div
+                                class="bg-white py-6 px-6 text-left rounded-md hover:rotate-[-2deg] transition-all delay-100">
+                                <p class="text-4xl text-blue-500 font-semibold block py-3">01</p>
+                                <h3 class="text-2xl text-gray-800 font-semibold block py-3">Book a discovery call
+                                </h3>
+                                <p class="text-base font-normal text-left text-gray-600 pb-2">Book your free discovery
+                                    call by clicking one of the buttons on this page.</p>
+                                <a class="flex gap-3 hover:gap-4 py-2 text-blue-600 font-semibold transition-all delay-150"
+                                    href="#">Learn more <svg class="w-6 text-blue-200"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M9.99945 11H2.04883C2.55055 5.94668 6.8141 2 11.9995 2C17.5223 2 21.9995 6.47715 21.9995 12C21.9995 17.5228 17.5223 22 11.9995 22C6.8141 22 2.55055 18.0533 2.04883 13H9.99945V16L14.9995 12L9.99945 8V11Z">
+                                        </path>
+                                    </svg></a>
+                            </div> <br>
+                            <div
+                                class="bg-white py-6 px-6 text-left rounded-md hover:rotate-[2deg] transition-all delay-100">
+                                <p class="text-4xl text-blue-500 font-semibold block py-3">02</p>
+                                <h3 class="text-2xl text-gray-800 font-semibold block py-3">Get a personal growth
+                                    strategy
+                                </h3>
+                                <p class="text-base font-normal text-left text-gray-600 pb-2">On this call, we'll assess
+                                    your business and start working on your personal growth strategy.</p>
+
+                            </div> <br>
+                            <div
+                                class="bg-white py-6 px-6 text-left rounded-md hover:rotate-[-2deg] transition-all delay-100">
+                                <p class="text-4xl text-blue-500 font-semibold block py-3">03</p>
+                                <h3 class="text-2xl text-gray-800 font-semibold block py-3">Onboarding
+                                </h3>
+                                <p class="text-base font-normal text-left text-gray-600 pb-2">After the strategy is
+                                    complete, we will onboard you onto our softwares to ensure a smooth process.</p>
+
+                            </div> <br>
+                            <div
+                                class="bg-white py-6 px-6 text-left rounded-md hover:rotate-[2deg] transition-all delay-100">
+                                <p class="text-4xl text-blue-500 font-semibold block py-3">04</p>
+                                <h3 class="text-2xl text-gray-800 font-semibold block py-3">Implementation & results
+                                </h3>
+                                <p class="text-base font-normal text-left text-gray-600 pb-2">And finally, we get to
+                                    implementing the growth strategy and working to see results.</p>
+                                <a class="flex gap-3 hover:gap-4 py-2 text-blue-600 font-semibold transition-all delay-150"
+                                    href="#">Learn more <svg class="w-6 text-blue-200"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M9.99945 11H2.04883C2.55055 5.94668 6.8141 2 11.9995 2C17.5223 2 21.9995 6.47715 21.9995 12C21.9995 17.5228 17.5223 22 11.9995 22C6.8141 22 2.55055 18.0533 2.04883 13H9.99945V16L14.9995 12L9.99945 8V11Z">
+                                        </path>
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Process section end -->
+
+    <!-- Price section start -->
+    <section class="bg-[#f6f6f7] py-16">
+        <div class="container m-auto px-6">
+            <div class="text-center">
+                <p
+                    class="text-center text-base inline-block text-blue-500 bg-white py-2 px-4 rounded-md font-semibold uppercase">
+                    Pricing</p>
+                <h2 class="text-3xl lg:text-5xl text-center font-bold block py-3">Plans to Fit Your Business
+                </h2>
+            </div>
+            <div class="text-center">
+                <label for="AcceptConditions"
+                    class="relative inline-block h-8 w-14 cursor-pointer rounded-full bg-gray-300 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-blue-500">
+                    <input type="checkbox" id="AcceptConditions" class="peer sr-only" />
+
+                    <span
+                        class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-white transition-all peer-checked:start-6"></span>
+                </label>
+            </div>
+            <div class="w-full md:w-4/5 m-auto py-8">
+                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+                    <div class="col-span-4">
+                        <div
+                            class="max-w-sm mx-auto overflow-hidden bg-white rounded-2xl shadow-lg text-slate-500 shadow-slate-200 lg:max-md-full">
+                            <div class="flex flex-col px-1 py-1 ">
+                                <header class="flex flex-col gap-6 p-6 text-slate-400 bg-gray-100 rounded-xl">
+                                    <h3 class="text-xl font-bold text-slate-700">
+                                        Pro
+                                    </h3>
+                                    <h4>
+                                        <span
+                                            class="text-3xl lg:text-5xl font-medium tracking-tighter transition-all duration-300 text-slate-700 "
+                                            id="change-1">$199/m</span>
+                                        <br>
+                                        <p class="text-left text-gray-700 font-semibold text-lg">Price breakdown here
+                                        </p>
+                                    </h4>
+
+                                    <button
+                                        class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 text-base font-medium tracking-wide text-white transition duration-300   whitespace-nowrap bg-blue-500 hover:bg-blue-600 hover:shadow-md  focus:bg-blue-700 focus:shadow-md  focus-visible:outline-none rounded-full cursor-pointer">
+                                        <span>Get Started</span>
+                                    </button>
+                                    <p class="text-center text-base text-gray-600 font-normal">Got questions? Talk to an
+                                        expert.</p>
+                                </header>
+                                <div class="p-6">
+                                    <ul class="space-y-4">
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <footer class="p-6 text-sm text-center border-t border-white">
+                                    <div class="space-y-4">
+                                        <details
+                                            class="group bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden rounded-2xl">
+                                            <summary class="flex cursor-pointer items-center justify-between gap-1.5">
+                                                <h2 class="text-lg font-medium text-gray-900">
+                                                    Optional add-ons
+                                                </h2>
+
+                                                <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+                                                        viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </span>
+                                            </summary>
+
+                                            <p class="mt-4 text-gray-700 text-left text-base leading-10">
+                                                Placeholder - $400/yr <br>
+                                                Placeholder - $400/yr<br>
+                                                Placeholder - $400/yr
+                                            </p>
+                                        </details>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <div
+                            class="max-w-sm mx-auto overflow-hidden bg-white rounded-2xl shadow-lg text-slate-500 shadow-slate-200 lg:max-md-full">
+                            <div class="flex flex-col px-1 py-1 ">
+                                <header class="flex flex-col gap-6 p-6 text-slate-400 bg-gray-100 rounded-xl">
+                                    <h3 class="flex gap-3 text-xl font-bold text-slate-700">
+                                        <span>Pro </span><span
+                                            class="bg-blue-600 pl-2 pr-3 py-1 text-white rounded-full text-sm font-light">🔥
+                                            Popular</span>
+                                    </h3>
+                                    <h4>
+                                        <span
+                                            class="text-3xl lg:text-5xl font-medium tracking-tighter transition-all duration-300 text-slate-700 "
+                                            id="change-2">$599/m</span>
+                                        <br>
+                                        <p class="text-left text-gray-700 font-semibold text-lg">Price breakdown here
+                                        </p>
+                                    </h4>
+
+                                    <button
+                                        class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 text-base font-medium tracking-wide text-white transition duration-300   whitespace-nowrap bg-blue-500 hover:bg-blue-600 hover:shadow-md  focus:bg-blue-700 focus:shadow-md  focus-visible:outline-none rounded-full cursor-pointer">
+                                        <span>Get Started</span>
+                                    </button>
+                                    <p class="text-center text-base text-gray-600 font-normal">Got questions? Talk to an
+                                        expert.</p>
+                                </header>
+                                <div class="p-6">
+                                    <ul class="space-y-4">
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <footer class="p-6 text-sm text-center border-t border-white">
+                                    <div class="space-y-4">
+                                        <details
+                                            class="group bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden rounded-2xl">
+                                            <summary class="flex cursor-pointer items-center justify-between gap-1.5">
+                                                <h2 class="text-lg font-medium text-gray-900">
+                                                    Optional add-ons
+                                                </h2>
+
+                                                <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+                                                        viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </span>
+                                            </summary>
+
+                                            <p class="mt-4 text-gray-700 text-left text-base leading-10">
+                                                Placeholder - $400/yr <br>
+                                                Placeholder - $400/yr<br>
+                                                Placeholder - $400/yr
+                                            </p>
+                                        </details>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 ">
+                        <div
+                            class="max-w-sm mx-auto overflow-hidden bg-white rounded-2xl shadow-lg text-slate-500 shadow-slate-200 lg:max-md-full">
+                            <div class="flex flex-col px-1 py-1 ">
+                                <header class="flex flex-col gap-6 p-6 text-slate-400 bg-gray-100 rounded-xl">
+                                    <h3 class="text-xl font-bold text-slate-700">
+                                        Premium
+                                    </h3>
+                                    <h4>
+                                        <span
+                                            class="text-3xl lg:text-5xl font-medium tracking-tighter transition-all duration-300 text-slate-700 "
+                                            id="change-3">$499/m</span>
+                                        <br>
+                                        <p class="text-left text-gray-700 font-semibold text-lg">Price breakdown here
+                                        </p>
+                                    </h4>
+
+                                    <button
+                                        class="inline-flex items-center justify-center w-full h-12 gap-2 px-6 text-base font-medium tracking-wide text-white transition duration-300   whitespace-nowrap bg-blue-500 hover:bg-blue-600 hover:shadow-md  focus:bg-blue-700 focus:shadow-md  focus-visible:outline-none rounded-full cursor-pointer">
+                                        <span>Get Started</span>
+                                    </button>
+                                    <p class="text-center text-base text-gray-600 font-normal">Got questions? Talk to an
+                                        expert.</p>
+                                </header>
+                                <div class="p-6">
+                                    <ul class="space-y-4">
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+
+                                        <li class="flex items-center gap-2 h-6 justify-start">
+                                            <svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                fill="currentColor">
+                                                <path
+                                                    d="M4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12ZM12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM17.4571 9.45711L16.0429 8.04289L11 13.0858L8.20711 10.2929L6.79289 11.7071L11 15.9142L17.4571 9.45711Z">
+                                                </path>
+                                            </svg>
+                                            <span class="text-base"> Feature here</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <footer class="p-6 text-sm text-center border-t border-white">
+                                    <div class="space-y-4">
+                                        <details
+                                            class="group bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden rounded-2xl">
+                                            <summary class="flex cursor-pointer items-center justify-between gap-1.5">
+                                                <h2 class="text-lg font-medium text-gray-900">
+                                                    Optional add-ons
+                                                </h2>
+
+                                                <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+                                                        viewBox="0 0 20 20" fill="currentColor">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </span>
+                                            </summary>
+
+                                            <p class="mt-4 text-gray-700 text-left text-base leading-10">
+                                                Placeholder - $400/yr <br>
+                                                Placeholder - $400/yr<br>
+                                                Placeholder - $400/yr
+                                            </p>
+                                        </details>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Price section end -->
+
+    <!-- FAQ section start -->
+    <section class="bg-[#f6f6f7] py-16">
+        <div class="container m-auto px-6">
+            <div class="text-center">
+                <p
+                    class="text-center text-base inline-block text-blue-500 bg-white py-2 px-4 rounded-md font-semibold uppercase">
+                    FAQ</p>
+                <h2 class="text-3xl lg:text-6xl text-center font-bold block py-3">You’ve got questions, <br> we’ve got
+                    <span class="text-blue-500">answers</span>
+                </h2>
+            </div>
+
+            <div class="w-full md:w-3/5 m-auto py-10">
+                <div class="space-y-4">
+                    <details
+                        class="group rounded-2xl border-1 border-gray-200 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
+                        open>
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5">
+                            <h2 class="text-sm md:text-lg font-medium text-gray-900 group-open:text-blue-600">
+                                How can I tell if using AI is the right solution for my problem?
+                            </h2>
+
+                            <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </summary>
+
+                        <p class="mt-4 leading-relaxed text-gray-700 text-sm md:text-base">
+                            Figuring out which process to enhance using AI can be tricky for business people. If you
+                            have a business problem where you feel that the solution might be hidden in data and can't
+                            be solved with simple rules, AI could be the answer. <br><br>
+
+                            To define an AI use case, you'll need the help of an AI team, the person who knows the most
+                            about the issue (the problem owner), and technical specialists who understand how to deal
+                            with the problem in the technical world.
+                        </p>
+                    </details>
+
+                    <details
+                        class="group rounded-2xl border-1 border-gray-200 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5">
+                            <h2 class="text-sm md:text-lg font-medium text-gray-900 group-open:text-blue-600">
+                                How long does an AI solution take to implement?
+                            </h2>
+
+                            <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </summary>
+
+                        <p class="mt-4 leading-relaxed text-gray-700 text-sm md:text-base">
+                            Using AI involves a series of steps: collecting data, labeling it, developing and training
+                            the model, testing and evaluating it, and finally deploying the solution. At the beginning,
+                            data collection and labeling take 20-50% of the time (higher % for smaller or standard
+                            projects). <br><br>
+
+                            The rest of the time is spent on model development, testing, and deployment, which depends
+                            on how unique the problem is, the performance level required, and the complexity of
+                            deployment. AI projects can last anywhere from 3 months to several years, depending on the
+                            size and collaboration needed.
+                        </p>
+                    </details>
+
+                    <details
+                        class="group rounded-2xl border-1 border-gray-200 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex cursor-pointer items-center justify-between gap-1.5">
+                            <h2 class="text-sm md:text-lg font-medium text-gray-900 group-open:text-blue-600">
+                                Will we need to make changes in our teams?
+                            </h2>
+
+                            <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
+                                    viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                        </summary>
+
+                        <p class="mt-4 leading-relaxed text-gray-700 text-sm md:text-base">
+                            No, you don't have to fire employees. AI and automation are only there to help humans to be
+                            able to focus on the most important tasks by automating time-consuming and repetitive tasks.
+                            In the long run, process automation will make your teams happier and improves their
+                            performance. <br><br>
+
+                            All you need to do is sit back, let the automation run the repetitive tasks, and focus on
+                            strategic tasks that only humans can do. With our experience running AI projects, we know
+                            how frustrating it is for company teams to integrate innovative AI & automation solutions
+                            into their daily routines.<br><br>
+
+                            With our approach, we not only implement an automation solution but also help you to realize
+                            the "Future of Work" with all the freedom that it brings.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ section end -->
+
+    <!-- Footer section start -->
+    <footer class="bg-[#f6f6f7] pt-0 pb-10 md:py-16 ">
+        <div class="container m-auto px-6 bg-gray-900 rounded-3xl bg-[url('images/2.svg')] bg-no-repeat ">
+            <div class="pb-10 pt-24">
+                <div class="text-center">
+                    <p
+                        class="text-center text-base inline-block text-blue-500 bg-gray-700 py-2 px-4 rounded-md font-semibold uppercase">
+                        Testimonials</p>
+                    <h2 class="text-3xl lg:text-6xl text-center font-bold block py-5 text-white">Ready to Get <span
+                            class="text-blue-500">Started?</span>
+                    </h2>
+                    <p class="text-base font-light w-4/5 lg:w-2/5 m-auto text-white">Experience the future of business
+                        operations
+                        with AI automation—increased speed, accuracy, and adaptability, driving overall productivity
+                        gains.</p>
+                    <div class="pt-6"><a href="#"
+                            class="inline-block text-lg text-center font-medium py-2 px-6 bg-blue-600 rounded-4xl text-white hover:bg-blue-900 transition-all decoration-slate-300">Book
+                            Your Free Audit Call</a></div>
+                </div>
+            </div>
+
+            <div class="w-3/5 m-auto pt-4 lg:pt-36 pb-12">
+                <div class="grid grid-cols-4 gap-6 md:grid-cols-8 lg:grid-cols-12">
+                    <div class="col-span-4">
+                        <div class="flex  justify-evenly h-40 items-center">
+                            <a href="#"><svg class="w-6 text-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z">
+                                    </path>
+                                </svg></a>
+                            <a href="#"><svg class="w-6 text-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z">
+                                    </path>
+                                </svg></a>
+                            <a href="#"><svg class="w-6 text-white" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M22.2125 5.65605C21.4491 5.99375 20.6395 6.21555 19.8106 6.31411C20.6839 5.79132 21.3374 4.9689 21.6493 4.00005C20.8287 4.48761 19.9305 4.83077 18.9938 5.01461C18.2031 4.17106 17.098 3.69303 15.9418 3.69434C13.6326 3.69434 11.7597 5.56661 11.7597 7.87683C11.7597 8.20458 11.7973 8.52242 11.8676 8.82909C8.39047 8.65404 5.31007 6.99005 3.24678 4.45941C2.87529 5.09767 2.68005 5.82318 2.68104 6.56167C2.68104 8.01259 3.4196 9.29324 4.54149 10.043C3.87737 10.022 3.22788 9.84264 2.64718 9.51973C2.64654 9.5373 2.64654 9.55487 2.64654 9.57148C2.64654 11.5984 4.08819 13.2892 6.00199 13.6731C5.6428 13.7703 5.27232 13.8194 4.90022 13.8191C4.62997 13.8191 4.36771 13.7942 4.11279 13.7453C4.64531 15.4065 6.18886 16.6159 8.0196 16.6491C6.53813 17.8118 4.70869 18.4426 2.82543 18.4399C2.49212 18.4402 2.15909 18.4205 1.82812 18.3811C3.74004 19.6102 5.96552 20.2625 8.23842 20.2601C15.9316 20.2601 20.138 13.8875 20.138 8.36111C20.138 8.1803 20.1336 7.99886 20.1256 7.81997C20.9443 7.22845 21.651 6.49567 22.2125 5.65605Z">
+                                    </path>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <div class="col-span-4">
+                        <div class="flex flex-col gap-4 justify-center">
+                            <a href="#"><img class="w-24 m-auto" src="images/logo.svg" alt=""></a>
+                            <p class="text-center text-white text-sm font-normal">Build a powerful agency site <br> with
+                                Framer.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-4 ">
+                        <div class="flex justify-evenly h-40 items-center">
+                            <a href="#" class="text-base inline-block text-white font-medium">About</a>
+                            <a href="#" class="text-baseinline-block text-white font-medium">Contact</a>
+                            <a href="#" class="text-base inline-block text-white font-medium">Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copy right section-->
+    <section class="bg-[#f6f6f7] pb-16">
+        <div class="container m-auto px-6">
+            <p class="text-center text-blue-700 text-sm font-light">Developed by Akashbk201</p>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="custom.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.getElementById("image-container");
+            const imageUrl =
+                "https://img.freepik.com/free-vector/abstract-company-logo_53876-120501.jpg?semt=ais_hybrid";
+
+            function loadImages(count = 6) {
+                for (let i = 0; i < count; i++) {
+                    const img = document.createElement("img");
+                    img.src = imageUrl;
+                    img.alt = "Logo Image";
+                    img.className =
+                        "w-full h-auto rounded-lg shadow-md hover:shadow-lg transition-all duration-300";
+                    container.appendChild(img);
+                }
+            }
+
+            loadImages(); // Initial load
+
+            window.addEventListener("scroll", () => {
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+                    loadImages(6); // Load 6 more images on scroll
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
